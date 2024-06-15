@@ -680,4 +680,4 @@ Time before2: 58s
 
 Time after2: 0.592s
 
-![Untitled](Indeksi%20e416f2022ede4a88b4447c7e05dca5e5/Untitled.png)
+
