@@ -546,7 +546,7 @@ db.list_user.aggregate([
 
 6. Question: Which movie has the most liked negative critique?
 
-Time: 48s
+Time: 0,93s
 
 ```jsx
 db.ratings.aggregate([
@@ -580,7 +580,7 @@ db.ratings.aggregate([
 
 7. Question: Which movie has the most liked positive critique?
 
-Time: 58s
+Time: 0,023s
 
 ```jsx
 db.ratings_user.aggregate([
@@ -613,7 +613,7 @@ db.ratings_user.aggregate([
 
 8. Question: What time of day do most people write reviews?
 
-Time: 1.684s
+Time: 0,499s
 
 ```jsx
 db.ratings.aggregate([
@@ -691,7 +691,7 @@ db.lists_user.aggregate([
 
 10. Question: What is the percentage of critique likes that we get from different types of users; nije u procentima nego prosecno koliko lajkova koji tip
 
-Time: 2.735s
+Time: 1,232s
 
 ```jsx
 db.rating_user.aggregate([
