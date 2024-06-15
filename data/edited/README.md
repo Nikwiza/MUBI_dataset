@@ -38,7 +38,7 @@ db.ratings.aggregate([
 ])
 ```
 
-1. Question: Are movies watched by premium users more popular?
+2. Question: Are movies watched by premium users more popular?
 
 Time: /
 
@@ -68,7 +68,7 @@ db.rating_user.aggregate([
 ])
 ```
 
-1. Question: Which generation of movies do the premium users like to watch?
+3. Question: Which generation of movies do the premium users like to watch?
 
 Time: /
 
@@ -107,7 +107,7 @@ db.rating_user.aggregate([
 
 ```
 
-1. Question: What year is home to the most popular movies?
+4. Question: What year is home to the most popular movies?
 
 Time: 0.941s
 
@@ -125,7 +125,7 @@ db.mubi_movie.aggregate([
 ])
 ```
 
-1. Question: Does the way a users profile is setup translate into list popularity?
+5. Question: Does the way a users profile is setup translate into list popularity?
 Time: /
 
 ```jsx
@@ -154,7 +154,7 @@ db.lists_user.aggregate([
 ])
 ```
 
-1. Question: Which movie has the most liked negative critique?
+6. Question: Which movie has the most liked negative critique?
 
 Time: 48s
 
@@ -198,7 +198,7 @@ db.ratings.aggregate([
 ])
 ```
 
-1. Question: Which movie has the most liked positive critique?
+7. Question: Which movie has the most liked positive critique?
 
 Time: 58s
 
@@ -242,7 +242,7 @@ db.ratings.aggregate([
 ])
 ```
 
-1. Question: What time of day do most people write reviews?
+8. Question: What time of day do most people write reviews?
 
 Time: 1.684s
 
@@ -269,7 +269,7 @@ db.ratings.aggregate([
 
 ```
 
-1. Question: Do people who post lists with longer ratings give reviews more commonly?
+9. Question: Do people who post lists with longer ratings give reviews more commonly?
 Time: 0.017s
 
 ```jsx
@@ -320,7 +320,7 @@ db.lists.aggregate([
 ])
 ```
 
-1. Question: What is the percentage of critique likes that we get from different types of users; nije u procentima nego prosecno koliko lajkova koji tip
+10. Question: What is the percentage of critique likes that we get from different types of users; nije u procentima nego prosecno koliko lajkova koji tip
 
 Time: 2.735s
 
@@ -405,8 +405,6 @@ user_has_payment_method: 1
 db.mubi_movie.createIndex({ movie_release_year: 1 });
 ```
 
-The indexes didn’t give a satisfactory result.
-
 ## Queries used after optimization
 
 1. Question: Which type of user creates the most ratings?
@@ -443,7 +441,7 @@ db.rating_user.aggregate([
 ])
 ```
 
-1. Question: Are movies watched by premium users more popular?
+2. Question: Are movies watched by premium users more popular?
 
 Time: 4.279s
 
@@ -462,7 +460,7 @@ db.rating_user.aggregate([
 ])
 ```
 
-1. Question: Which generation of movies do the premium users like to watch?
+3. Question: Which generation of movies do the premium users like to watch?
 
 Time: 4.655s
 
@@ -491,7 +489,7 @@ db.rating_user.aggregate([
 
 ```
 
-1. Question: What year is home to the most popular movies?
+4. Question: What year is home to the most popular movies?
 
 Time: 0.451s
 
@@ -509,7 +507,7 @@ db.mubi_movie.aggregate([
 ])
 ```
 
-1. Question: Does the way a users profile is setup translate into list popularity?
+5. Question: Does the way a users profile is setup translate into list popularity?
 Time: 
 
 ```jsx
@@ -546,7 +544,7 @@ db.list_user.aggregate([
 ])
 ```
 
-1. Question: Which movie has the most liked negative critique?
+6. Question: Which movie has the most liked negative critique?
 
 Time: 48s
 
@@ -580,7 +578,7 @@ db.ratings.aggregate([
 ])
 ```
 
-1. Question: Which movie has the most liked positive critique?
+7. Question: Which movie has the most liked positive critique?
 
 Time: 58s
 
@@ -613,7 +611,7 @@ db.ratings_user.aggregate([
 ])
 ```
 
-1. Question: What time of day do most people write reviews?
+8. Question: What time of day do most people write reviews?
 
 Time: 1.684s
 
@@ -640,7 +638,7 @@ db.ratings.aggregate([
 
 ```
 
-1. Question: Do people who post lists with longer ratings give reviews more commonly?
+9. Question: Do people who post lists with longer ratings give reviews more commonly?
 Time: 0.017s
 
 ```jsx
@@ -691,7 +689,7 @@ db.lists_user.aggregate([
 ])
 ```
 
-1. Question: What is the percentage of critique likes that we get from different types of users; nije u procentima nego prosecno koliko lajkova koji tip
+10. Question: What is the percentage of critique likes that we get from different types of users; nije u procentima nego prosecno koliko lajkova koji tip
 
 Time: 2.735s
 
