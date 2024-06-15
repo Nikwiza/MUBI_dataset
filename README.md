@@ -636,3 +636,48 @@ db.mubi_movie.createIndex({ movie_id: 1 });
 
 // Optional: Index on movie_release_year in the mubi_movie collection to speed up the grouping
 db.mubi_movie.createIndex({ movie_release_year: 1 });
+
+Question: Which type of users create the most ratings, and do they attach critiques to those ratings?
+
+Creating index:
+
+```json
+db.ratings.createIndex({
+  user_trialist: 1,
+  user_subscriber: 1,
+  user_eligible_for_trial: 1,
+  user_has_payment_method: 1
+})
+```
+
+Time before: 1.515s
+
+Time after: 1.384s
+
+Question1: Which movie has the most liked negative critique?
+
+Question2: Which movie has the most liked positive critique?
+
+Creating index:
+
+```json
+db.ratings.createIndex({
+  rating_score: 1,
+  movie_id: 1,
+  critic_likes: 1
+})
+db.movie.createIndex({
+  movie_id: 1
+})
+
+```
+
+Time before1: 48s
+
+Time after1: 0.108s
+
+Time before2: 58s
+
+Time after2: 0.592s
+
+![Untitled](Indeksi%20e416f2022ede4a88b4447c7e05dca5e5/Untitled.png)
